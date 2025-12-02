@@ -1,0 +1,62 @@
+(base) gkrs_17@Sauravs-MacBook-Air-6 sg275_assignment4 % python3 MinHash.py
+=== Task 0: MinHash Demo ===
+True Jaccard similarity (3-grams) : 0.519435
+Estimated Jaccard via MinHash (m=100) : 0.590000
+
+Downloading AOL dataset from:
+  https://cim.mcgill.ca/~dudek/206/Logs/AOL-user-ct-collection/user-ct-test-collection-01.txt
+Loaded 377870 unique URLs from remote AOL file
+=== Task 1: LSH Retrieval (K=2, L=50, B=64, R=2^20) ===
+Number of URLs: 377870
+Number of queries: 200
+Mean Jaccard similarity (all retrieved URLs): 0.225441
+Mean Jaccard similarity (top-10 URLs per query): 0.558719
+Average lookup time per query (seconds): 0.039192
+
+=== Task 2: Brute-force Jaccard Similarity ===
+Number of URLs: 377870
+Number of queries: 200
+Total brute-force time for 75574000 pairs (seconds): 91.919793
+Average time per query (seconds): 0.459599
+Estimated time for all ~71392679515 URL pairs (seconds): 86834.10
+
+=== Task 3: Tuning K and L ===
+K values: (2, 3, 4, 5, 6)
+L values: (20, 50, 100)
+
+K= 2, L= 20 -> mean Jaccard (retrieved): 0.242509, avg query time (s): 0.018746
+K= 2, L= 50 -> mean Jaccard (retrieved): 0.225441, avg query time (s): 0.037843
+K= 2, L=100 -> mean Jaccard (retrieved): 0.220930, avg query time (s): 0.089451
+K= 3, L= 20 -> mean Jaccard (retrieved): 0.248957, avg query time (s): 0.013923
+K= 3, L= 50 -> mean Jaccard (retrieved): 0.236564, avg query time (s): 0.036608
+K= 3, L=100 -> mean Jaccard (retrieved): 0.226583, avg query time (s): 0.207778
+K= 4, L= 20 -> mean Jaccard (retrieved): 0.238679, avg query time (s): 0.009526
+K= 4, L= 50 -> mean Jaccard (retrieved): 0.231626, avg query time (s): 0.030848
+K= 4, L=100 -> mean Jaccard (retrieved): 0.225374, avg query time (s): 0.781689
+K= 5, L= 20 -> mean Jaccard (retrieved): 0.225830, avg query time (s): 0.008765
+K= 5, L= 50 -> mean Jaccard (retrieved): 0.225013, avg query time (s): 0.032075
+K= 5, L=100 -> mean Jaccard (retrieved): 0.223134, avg query time (s): 0.732297
+K= 6, L= 20 -> mean Jaccard (retrieved): 0.222450, avg query time (s): 0.008001
+K= 6, L= 50 -> mean Jaccard (retrieved): 0.221983, avg query time (s): 0.034987
+K= 6, L=100 -> mean Jaccard (retrieved): 0.221969, avg query time (s): 0.713722
+
+Summary table (K, L, mean_Jaccard, avg_query_time_seconds):
+ 2,  20, 0.242509, 0.018746
+ 2,  50, 0.225441, 0.037843
+ 2, 100, 0.220930, 0.089451
+ 3,  20, 0.248957, 0.013923
+ 3,  50, 0.236564, 0.036608
+ 3, 100, 0.226583, 0.207778
+ 4,  20, 0.238679, 0.009526
+ 4,  50, 0.231626, 0.030848
+ 4, 100, 0.225374, 0.781689
+ 5,  20, 0.225830, 0.008765
+ 5,  50, 0.225013, 0.032075
+ 5, 100, 0.223134, 0.732297
+ 6,  20, 0.222450, 0.008001
+ 6,  50, 0.221983, 0.034987
+ 6, 100, 0.221969, 0.713722
+
+=== Task 4: S-curves plotted ===
+Saved: s_curve_L50_vary_K.png
+Saved: s_curve_K4_vary_L.png
