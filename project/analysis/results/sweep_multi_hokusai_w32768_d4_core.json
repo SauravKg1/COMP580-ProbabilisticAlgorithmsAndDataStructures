@@ -1,0 +1,27 @@
+[
+  {
+    "est": 148,
+    "target": "if you have any",
+    "true": 148
+  },
+  {
+    "est": 95,
+    "target": "this comment! If this",
+    "true": 94
+  },
+  {
+    "est": 106,
+    "target": "you have any questions",
+    "true": 106
+  },
+  {
+    "est": 102,
+    "target": "this action was performed",
+    "true": 102
+  },
+  {
+    "est": 101,
+    "target": "action was performed automatically.",
+    "true": 101
+  }
+]

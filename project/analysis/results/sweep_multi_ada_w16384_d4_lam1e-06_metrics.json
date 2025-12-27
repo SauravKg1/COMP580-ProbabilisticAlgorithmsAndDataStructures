@@ -1,0 +1,9 @@
+{
+  "estimated_bytes": 524288.0,
+  "mae": 132.46790911032687,
+  "mean_relative_error": 0.027842370880712505,
+  "num_queries": 55.0,
+  "rmse": 156.90167399455194,
+  "total_counters": 65536.0,
+  "weighted_relative_l1": 0.027254722572138616
+}

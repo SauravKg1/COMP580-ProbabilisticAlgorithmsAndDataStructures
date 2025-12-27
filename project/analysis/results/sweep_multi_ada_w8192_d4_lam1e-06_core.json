@@ -1,0 +1,27 @@
+[
+  {
+    "est": 12216.102609668758,
+    "target": "if you have any",
+    "true": 12736.81600186087
+  },
+  {
+    "est": 9135.205525787278,
+    "target": "you have any questions",
+    "true": 9656.295004048741
+  },
+  {
+    "est": 8812.229869781264,
+    "target": "have any questions or",
+    "true": 9333.358773782016
+  },
+  {
+    "est": 8777.025077842634,
+    "target": "this action was performed",
+    "true": 9298.158279303367
+  },
+  {
+    "est": 8681.86712829868,
+    "target": "and this action was",
+    "true": 9203.011945720033
+  }
+]
